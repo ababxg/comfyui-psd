@@ -1,0 +1,49 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- 节点 -->
+  <!-- 图像加载节点 -->
+  <rect x="50" y="50" width="150" height="80" rx="5" fill="#e0e0ff" stroke="#0000aa" stroke-width="2"/>
+  <text x="125" y="90" font-family="Arial" font-size="14" text-anchor="middle">Load Image</text>
+  
+  <!-- 蒙版加载节点 -->
+  <rect x="50" y="200" width="150" height="80" rx="5" fill="#e0e0ff" stroke="#0000aa" stroke-width="2"/>
+  <text x="125" y="240" font-family="Arial" font-size="14" text-anchor="middle">Load Mask</text>
+  
+  <!-- Apply Alpha节点 -->
+  <rect x="300" y="125" width="150" height="80" rx="5" fill="#ffe0e0" stroke="#aa0000" stroke-width="2"/>
+  <text x="375" y="165" font-family="Arial" font-size="14" text-anchor="middle">Enhanced Apply Alpha</text>
+  
+  <!-- PSD Layer节点 -->
+  <rect x="550" y="125" width="150" height="80" rx="5" fill="#e0ffe0" stroke="#00aa00" stroke-width="2"/>
+  <text x="625" y="165" font-family="Arial" font-size="14" text-anchor="middle">Enhanced PSD Layer</text>
+  
+  <!-- Save PSD节点 -->
+  <rect x="550" y="300" width="150" height="80" rx="5" fill="#ffe0ff" stroke="#aa00aa" stroke-width="2"/>
+  <text x="625" y="340" font-family="Arial" font-size="14" text-anchor="middle">Enhanced Save PSD</text>
+  
+  <!-- 连接线 -->
+  <!-- Load Image到Apply Alpha -->
+  <line x1="200" y1="90" x2="300" y2="145" stroke="#000000" stroke-width="2"/>
+  <text x="250" y="110" font-family="Arial" font-size="12" text-anchor="middle">image</text>
+  
+  <!-- Load Mask到Apply Alpha -->
+  <line x1="200" y1="240" x2="300" y2="165" stroke="#000000" stroke-width="2"/>
+  <text x="250" y="210" font-family="Arial" font-size="12" text-anchor="middle">mask</text>
+  
+  <!-- Apply Alpha到PSD Layer -->
+  <line x1="450" y1="165" x2="550" y2="165" stroke="#000000" stroke-width="2"/>
+  <text x="500" y="155" font-family="Arial" font-size="12" text-anchor="middle">image</text>
+  
+  <!-- PSD Layer到Save PSD -->
+  <line x1="625" y1="205" x2="625" y2="300" stroke="#000000" stroke-width="2"/>
+  <text x="645" y="250" font-family="Arial" font-size="12" text-anchor="middle">psd</text>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Enhanced ComfyUI PSD - 示例工作流</text>
+  
+  <!-- 说明 -->
+  <text x="400" y="500" font-family="Arial" font-size="16" text-anchor="middle">这个工作流展示了如何将蒙版应用到图像并保存为PSD文件</text>
+  <text x="400" y="530" font-family="Arial" font-size="16" text-anchor="middle">可以添加多个PSD Layer节点来创建多图层PSD</text>
+</svg>
